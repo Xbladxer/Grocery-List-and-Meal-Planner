@@ -40,7 +40,7 @@ def add_recipe():
 
 def display_recipes():
     if st.session_state.recipes:
-        st.subheader("Saved Recipes")
+        st.subheader("Saved Plans")
         for idx, recipe in enumerate(st.session_state.recipes):
             st.write(f"**{recipe['name']}**")
             st.write("**Ingredients:** " + ", ".join(recipe['ingredients']))
