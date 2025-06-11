@@ -45,9 +45,9 @@ def display_recipes():
             st.write(f"**{recipe['name']}**")
             st.write("**Ingredients:** " + ", ".join(recipe['ingredients']))
             st.write("**Instructions:** " + recipe['instructions'])
-            if st.button(f"Delete Recipe {idx + 1}"):
+            if st.button(f"Delete Plan {idx + 1}"):
                 del st.session_state.recipes[idx]
-                st.success(f"Recipe '{recipe['name']}' deleted successfully!")
+                st.success(f"Plan '{recipe['name']}' deleted successfully!")
                 break
     else:
         st.write("No recipes saved yet.")
